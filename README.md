@@ -29,6 +29,10 @@ Current implementation limitations:
 * `checkout scm` does not work, change it to `sh 'git clone https://github.com/carlossg/jenkinsfile-runner-lambda-example.git'`
 * Jenkinsfile must add `/usr/local/bin` to `PATH` and use `/tmp` for any tool that needs writing files, see the [example](https://github.com/carlossg/jenkinsfile-runner-lambda-example)
 
+# Example
+
+See the [jenkinsfile-runner-lambda-example] project for an example that is tested and works.(https://github.com/carlossg/jenkinsfile-runner-lambda-example)
+
 # Extending
 
 Three lambda layers are created:
