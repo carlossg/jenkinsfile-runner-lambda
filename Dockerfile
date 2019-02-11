@@ -35,7 +35,7 @@ FROM maven:alpine as maven
 RUN mkdir -p /opt/bin && mv /usr/share/maven /opt/maven && ln -s /opt/maven/bin/mvn /opt/bin/mvn
 
 # Package jenkinsfile runner and plugins
-FROM csanchez/jenkinsfile-runner:2.121.1 as jenkinsfile-runner
+FROM csanchez/jenkinsfile-runner:1.0-beta-6-2.150.2 as jenkinsfile-runner
 COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
 # workaround https://github.com/jenkinsci/docker/pull/587
 RUN mkdir /usr/share/jenkins/ref/plugins/tmp.lock && \
